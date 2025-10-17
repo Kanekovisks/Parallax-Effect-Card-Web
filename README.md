@@ -7,6 +7,10 @@ Este projeto demonstra um efeito de parallax 3D em um cartão (card) utilizando 
   
 ---
 
+<img width="1728" alt="PrintParallax" src="">
+
+---
+
 ## Tecnologias utilizadas
 <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=for-the-badge" alt="HTML5 Badge">
 <img src="https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff&style=for-the-badge" alt="CSS Badge">
