@@ -1,3 +1,9 @@
+/*
+LINKS PARA CONSULTA:
+https://www.w3schools.com/js/default.asp - W3S School JavaScript
+https://developer.mozilla.org/en-US/docs/Web/JavaScript - MDN Web Docs JavaScript
+*/
+
 // Definição de constantes
 const container = document.querySelector('.container'); // Definição de "container"
 const card = document.querySelector('.card'); // Definição de "card"
@@ -28,3 +34,4 @@ container.addEventListener('mouseleave', () => {
     // Redefinição do posicionamento
     card.style.transform = 'rotateY(0) rotateX(0)';
 });
+
