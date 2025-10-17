@@ -7,7 +7,7 @@ Este projeto demonstra um efeito de parallax 3D em um cartão (card) utilizando 
   
 ---
 
-<img width="1728" alt="PrintParallax" src="https://github.com/Kanekovisks/Parallax-Effect-Card-Web/blob/main/PrintParallax.png">
+<video loop="" autoplay="" width="1728" alt="Video Parallax" src="">
 
 ---
 
