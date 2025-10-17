@@ -4,12 +4,7 @@
 
 ## Sobre
 Este projeto demonstra um efeito de parallax 3D em um cartão (card) utilizando HTML, CSS e JavaScript.
-
-- Cartão interativo: O card gira suavemente em 3D quando o cursor do mouse se move sobre ele.
-- Camadas com profundidade: Elementos dentro do card, como quadrados e textos, possuem diferentes profundidades para reforçar o efeito 3D.
-- Design moderno: Gradientes, sombras e tipografia estilizada dão um visual atraente e contemporâneo.
-- Responsivo e suave: O movimento é fluido, com transições suaves ao interagir ou retirar o mouse do card.
-
+  
 ---
 
 ## Tecnologias utilizadas
