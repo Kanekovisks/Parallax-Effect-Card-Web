@@ -1,20 +1,30 @@
-const container = document.querySelector('.container');
-const card = document.querySelector('.card');
+// Definição de constantes
+const container = document.querySelector('.container'); // Definição de "container"
+const card = document.querySelector('.card'); // Definição de "card"
 
+// Detector de sobreposição do mouse
 container.addEventListener('mousemove', (e) => {
+    // Definição suavidade durante sobreposição
     card.style.transition = 'transform 0.1s ease';
 
+    // Dados de área
     const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left - rect.width / 2;
-    const y = e.clientY - rect.top - rect.height / 2;
+    const x = e.clientX - rect.left - rect.width / 2; // Definição de área X
+    const y = e.clientY - rect.top - rect.height / 2; // Definição de área Y
 
-    const rotateX = (y / rect.height) * 40;
-    const rotateY = (x / rect.width) * 40;
+    // Movimento de sobreposição do cursor
+    const rotateX = (y / rect.height) * 40; // Intensidade do movimento Y
+    const rotateY = (x / rect.width) * 40; // Instensidade do movimento X
 
-    card.style.transform = `rotateY(${rotateY}deg) rotateX(${-rotateX}deg)`;
+    // Angulação do "card"
+    card.style.transform = `rotateY(${rotateY}deg) rotateX(${-rotateX}deg)`; // Ângulo de rotação de interação com o cursor
 });
 
+
 container.addEventListener('mouseleave', () => {
-    card.style.transition = 'transform 0.6s ease';
+    // Definição suavidade após retirada do mouse
+    card.style.transition = 'transform 0.6s ease'; 
+
+    // Redefinição do posicionamento
     card.style.transform = 'rotateY(0) rotateX(0)';
 });
