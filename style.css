@@ -1,55 +1,72 @@
+/* Formatação padrão do projeto */
 * {
     margin: 0;
     padding: 0;
 }
 
+
+/* Definição visual base */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(105deg, #26043d, #130b16);
+    display: flex; /* Base responsiva simples */
+    justify-content: center; /* Centralização do conteúdo body */
+    align-items: center; /* Centralização de divs */
+    height: 100vh; /* Tamanho do body */
+    background: linear-gradient(105deg, #26043d, #130b16); /* Efeito gradiente no fundo*/
 }
 
+/* Visualização do quadrado principal */
 .container {
     perspective: 1000px;
 }
 
+/* Card */
 .card {
-    width: 300px;
+    /* Tamanho e posição do card */
+    width: 300px; 
     height: 300px;
-    background: linear-gradient(45deg, #ff6ec4, #7873f5);
-    border-radius: 25px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     transform-style: preserve-3d;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     font-size: 1.5rem;
     text-align: center;
+
+    /* Estilo do card */
+    border-radius: 25px;
     padding: 20px;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
+/* Quadrado */
 .square {
-    background: linear-gradient(#584061, #51106d);
+    /* Tamanho e posição do quadrado */
     position: absolute;
-    box-shadow: -5px 5px 15px #1b151d;
-    border-radius: inherit;
+    border-radius: inherit; 
+    
+    /* Estilo do quadrado */
+    background: linear-gradient(#584061, #51106d);
+    box-shadow: -5px 5px 15px #1b151d;   
 }
 
+/* Herança de tamanho e posição do Quadrado */
 .square:nth-child(1) {
     inset: 20px;
     transform: translate3d(0, 0, 40px);
 }
 
+/* Texto */
 .parallax_text {
-    transform: translate3d(0, 0, 120px);;
-    display: flex;
+    /* Estilo do texto */
     color: rgb(247, 218, 236);
+    text-shadow: #130b16 2px 2px 8px;
     font-family: "Montserrat", sans-serif;
     font-weight: 100;
+    
+    /* Tamanho e posição do texto */
     font-size: 4rem;
+    transform: translate3d(0, 0, 120px);
+    display: flex;    
     padding: 40px;
-    text-shadow: #130b16 2px 2px 8px;
 }
